@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+* {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.icons {
+  color: green;
+  font-size: 2rem;
+}
+
+.icons-contact {
+  color: aqua;
+  font-size: 2rem;
+}
+
+.icons-sign {
+  color: blue;
+  font-size: 2rem;
+}
