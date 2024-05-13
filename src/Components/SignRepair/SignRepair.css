@@ -1,0 +1,8 @@
+.display {
+  margin-top: 30px;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}

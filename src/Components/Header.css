@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+.nav-link {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.logoImage {
+  width: 200px;
+  height: 100px;
+}
+
+.navbar-custom {
+  background-color: #555;
+}
+.navbar-custom .navbar-nav .nav-link {
+  color: white;
+  /* word-spacing: 9px; */
+}
+/* .contact {
+  word-spacing: 1px;
+} */

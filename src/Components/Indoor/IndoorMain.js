@@ -1,8 +1,8 @@
-import Card from "../Components/Card";
 import React from "react";
-import "../Components/Main.css";
 
-const Main = () => {
+import IndoorItems from "./IndoorItems";
+
+const IndoorMain = () => {
   return (
     <>
       <div className="jumbotron jumbotron-fluid text-center">
@@ -14,9 +14,9 @@ const Main = () => {
           </p>
         </div>
       </div>
-      <Card />
+      <IndoorItems />
     </>
   );
 };
 
-export default Main;
+export default IndoorMain;

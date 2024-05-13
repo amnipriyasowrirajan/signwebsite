@@ -1,13 +1,13 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import ContactsIcon from "@mui/icons-material/Contacts";
-import { MdReviews } from "react-icons/md";
-import { FaSignature } from "react-icons/fa";
+
+import { Link } from "react-router-dom";
+import "../Components/Header.css";
 
 const Header = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg  navbar-dark bg-dark px-3">
+      <nav className="navbar navbar-expand-lg  navbar-dark navbar-custom px-3">
         <div className="container-fluid">
           {/* <Link to="/" className="navbar-brand" aria-label="Home">
             Sign Company
@@ -17,7 +17,8 @@ const Header = () => {
             href="javascript:void(0)"
             aria-label="Home"
           >
-            <FaSignature className="icons-sign" /> Sign Company
+            {/* <FaSignature className="icons-sign" /> */}
+            <img src="../images/logo.png" className="logoImage" alt="..." />
           </a>
 
           <button
@@ -34,35 +35,41 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" href="javascript:void(0)">
-                  Outdoor Signs
-                </a>
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="javascript:void(0)">
+                <Link className="nav-link" to="/channel">
+                  Channel Letters
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/signbox">
+                  Sign Box
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/decals">
                   Decals
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="javascript:void(0)">
-                  Custom Signs
-                </a>
+                <Link className="nav-link" to="/indoor">
+                  Indoor Signs
+                </Link>
               </li>
+
               <li className="nav-item">
-                <a className="nav-link" href="javascript:void(0)">
+                <Link className="nav-link" to="/repair">
                   Sign Repair
-                </a>
+                </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="javascript:void(0)">
-                  <MdReviews className="icons" /> Reviews
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="javascript:void(0)">
-                  <ContactsIcon className="icons-contact" />
+
+              <li className="contact">
+                <Link className="nav-link" to="/contact">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
             <form className="d-flex" role="search">

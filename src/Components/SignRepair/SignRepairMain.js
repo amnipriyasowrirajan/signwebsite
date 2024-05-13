@@ -1,22 +1,21 @@
-import Card from "../Components/Card";
 import React from "react";
-import "../Components/Main.css";
-
-const Main = () => {
+import SignRepairItems from "./SignRepairItems";
+import "../SignRepair/SignRepair.css";
+const SignRepairMain = () => {
   return (
     <>
       <div className="jumbotron jumbotron-fluid text-center">
         <div className="container">
-          <h1 className="display-4 display"> Welcome Everyone</h1>
-          <p className="lead">
+          <h1 className="display-4 display"> Sign Repair</h1>
+          {/* <p className="lead">
             This is a modified jumbotron that occupies the entire horizontal
             space of its parent.
-          </p>
+          </p> */}
         </div>
       </div>
-      <Card />
+      <SignRepairItems />
     </>
   );
 };
 
-export default Main;
+export default SignRepairMain;
